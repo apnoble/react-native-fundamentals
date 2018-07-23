@@ -1,14 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Header } from '../sections/Header.js';
+import { Hero } from '../sections/Hero.js';
 
 export class Home extends React.Component {
     render() {
         return(
             <View style={styles.container}>
                 <Header message='Press to Login' />
-                <Text style={{flex:8}}>This will be the Homepage</Text>
-                <Text style={{flex:6, paddingTop:40}}>These other lines are here</Text>
+                <Hero />
+                <Text style={{flex:6, paddingTop:30}}>These other lines are here</Text>
             </View>
         );
     }
@@ -17,7 +18,5 @@ export class Home extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: 'column-reverse',
-        alignItems: 'center'
     }
 });
